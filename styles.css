@@ -1,0 +1,178 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{ 
+    background-color: whitesmoke;
+    font-family: poppin;
+}
+.header{
+    background-color: black;
+}
+.navbar{
+    display: inline-flexbox;
+}
+.nav {
+    list-style-type: none; 
+    margin: 0;
+    font-size: 20px;
+    padding: 0px;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    padding-top: 2%;
+}
+
+.li{
+    display: inline;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.li:hover{
+    background-color: grey;
+    opacity: 0.7;
+    color: #000065;
+    text-decoration: underline;
+}
+.home{
+    text-align: center;
+    background-color: black;
+    font-family: poppin;
+    font-size: 18px;
+    color: white;
+}
+.eph{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+.h1{
+    color: orange;
+}
+.h2{
+    color: #000065;
+}
+.projects{
+    text-align: center;
+    font-family: poppin;
+    font-size: 18px;
+}
+.header-btn{
+    display: inline;
+    width: 150px;
+    height: 100px;
+    left: 50px;
+    top: 0px;
+    font-size: 18px;
+    border: 2px solid orange;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #000065;
+    transition: 0.4s;
+    color: #fff;
+}
+.header-btn:hover{
+    background-color: orange;
+    color: black;
+    border: none;
+}
+.services{
+    text-align: center;
+    font-size: 18px;
+    font-family: poppin;
+}
+*{
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: center;
+}
+.flex-item-1{
+    background-color: #000065;
+    padding: 10px;
+    flex: 50%;
+    color: white;
+}
+.flex-item-2{
+    background-color: orange;
+    padding: 10px;
+    flex: 50%;
+}
+/* Responsive Column layout*/
+@media(max-width:800px){
+    .flex-container{
+        flex-direction: column;
+    }
+}
+.contact{
+    background-color: #000065;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 10px;
+    width: 100%;
+    font-family: poppin;
+}
+.fab{
+    padding:10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.fab:hover{
+    opacity: 0.7;
+}
+.fa-linkedin{
+    color: white;
+    
+}
+.fa-facebook{
+    color: white;
+}
+.fa-github{
+    color: white;
+}
+.fa-instagram{
+    color: white;
+}
+#myBtn{
+    display:flex; /*hidden by default*/
+    position: fixed; /*Fixed/sticky position*/
+    bottom: 20px; /*Place the button at the bottom of the page*/
+    right: 30px; /*Place the buttonn 30px from the right*/
+    z-index: 99; /*Make sure it does not overlap*/
+    border: none; /*Remove borders*/
+    outline: none; /* Remove outline*/
+    background-color: orange; /*Set a background color*/
+    color: black; /*Text color*/
+    cursor: pointer; /*Add a mouse pointer on hover*/
+    padding: 15px; /*Some padding*/
+    border-radius: 50%; /*Rounded corners*/
+    font-size: 18px; /*Increase font size*/
+}
+#myBtn:hover{
+    background-color: black;/*Add a background color on hover*/
+    color: white;
+}
+/*CSS for mobile navigation*/
+@media (max-width:768px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .nav li{
+        margin-right: 0;
+        margin-bottom: 10px;
+
+    }
+}
